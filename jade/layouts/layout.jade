@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru-Ru")
+  head
+    meta(charset="utf-8")
+    title Аккумуляторный центр «Ампер»
+    meta(name="Keywords", content="аккумуляторы, бесплатная диагностика и зарядка аккумулятора")
+    meta(name="description", content="Cеть магазинов в г. Таганроге по продаже аккумуляторных батарей")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/all.css")
+  body
+    include ../includes/header
+    block content
+    include ../includes/footer
+    block js
+      // bower:js
+      script(src='bower_components/jquery/dist/jquery.js')
+      script(src='bower_components/slick.js/slick/slick.min.js')
+      // endbower
+      script(src='bower_components/fancybox/source/jquery.fancybox.pack.js')
+      script(src='js/vendor/fotorama-4.6.3/fotorama.js')
+      script(src="js/main.js")

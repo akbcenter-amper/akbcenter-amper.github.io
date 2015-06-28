@@ -1,0 +1,60 @@
+.popup
+  display none
+  border 2px solid #e05145
+  &_delivery
+    width 500px
+    padding 2rem 4rem 5rem
+  &_buy
+    width 550px
+    padding 2rem 2rem 3rem
+  &__header
+    text-align center
+    font 2.4rem latoregular
+    color #000
+    margin 0 0 3rem
+  &__content
+    width: 100%
+    &_fix
+      font-size: 0
+  &-list
+    margin 0
+    padding 0
+    list-style-position inside
+    &__item
+      font 1.6rem latoregular
+      color #000
+      &+&
+        margin-top 1.2rem
+  &__block-40
+    display: inline-block
+    vertical-align: top
+    width: 44%
+    text-align: center
+    a
+      font 1.4rem latoregular
+      display: inline-block
+      padding: 0.5rem 1rem
+      text-decoration: none
+      color: #000
+      opacity 0.8
+      width: 100%
+      border 2px solid #ec8f88
+      text-align: center
+      transition: all 0.3s ease-out
+      &:hover
+        background $red
+        color: #fff
+        transition: none
+
+  &__block-20
+    display: inline-block
+    vertical-align: top
+    width: 12%
+    text-align: center
+    span
+      font 1.4rem latoregular
+      color: #000
+      opacity 0.8
+      display: inline-block
+      padding-top: 1.5rem
+

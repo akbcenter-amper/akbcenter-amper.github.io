@@ -1,0 +1,163 @@
+extends layouts/layout.jade
+
+block content
+  .content
+    .content__i
+      #mainSlider.main-slider
+        each i in [1, 2]
+          .main-slider__item.js-main-slider-item
+            img.main-slider__img(src="img/r-img-slider-1.jpg", alt="")
+            .main-slider-info
+              .main-slider-info__title Бесплатная диагностика и зарядка аккумулятора
+              .main-slider-info__description.js-main-slider-tip.main-slider-tip.
+                Для всех постоянных клиентов мы проведем бесплатную диагностику и
+                зарядку аккумулятора прямо в магазине
+              .span.separator.separator_black.js-main-slider-tip.main-slider-tip
+            span.main-slider__icon.js-main-slider-icon
+      #brand.brand-wr
+        .title
+          span.title__i.title__i_red Выберите бренд
+        .brand
+          .brand__row
+            a.brand__item.brand__item_offset.js-brand-item(href="#" data-brand='1')
+              img.brand__img.brand__img_bosch(src="img/r-img-brand-2.png", alt="")
+              span.brand__item-active-state
+            a.brand__item.brand__item_offset.js-brand-item(href="#" data-brand='2')
+              img.brand__img.brand__img_deka(src="img/r-img-brand-1.png", alt="")
+              span.brand__item-active-state
+          .brand-table-w.js-brand-table.js-brand-table-1
+              span.brand-table__close.js-brand-table-close.
+                ×
+              table.brand-table
+                  tr.brand-table__header
+                      td
+                      td Напряжение (V)
+                      td Емкость (AH)
+                      td Ток холодной прокрутки (А)
+                      td Размеры
+                      td
+                  tr.brand-table__body
+                      td
+                        img(src="img/brand-varta-1.jpg", alt="")
+                      td 12
+                      td 60
+                      td 650
+                      td 242х175х190
+                      td
+                        a.brand-table__submit.js-fancybox-link(href="#buyPopup").
+                            Купить
+                  tr.brand-table__body
+                      td
+                          img(src="img/brand-varta-1.jpg", alt="")
+                      td 12
+                      td 60
+                      td 650
+                      td 242х175х190
+                      td
+                        a.brand-table__submit.js-fancybox-link(href="#buyPopup").
+                              Купить
+
+            .brand-table-w.js-brand-table.js-brand-table-2
+                span.brand-table__close.js-brand-table-close.
+                    ×
+                table.brand-table
+                    tr.brand-table__header
+                        td
+                        td Напряжение (V)
+                        td Емкость (AH)
+                        td Ток холодной прокрутки (А)
+                        td Размеры
+                        td
+                    tr.brand-table__body
+                        td
+                            img(src="img/brand-varta-1.jpg", alt="")
+                        td 12
+                        td 60
+                        td 650
+                        td 242х175х190
+                        td
+                            a.brand-table__submit.js-fancybox-link(href="#buyPopup").
+                                Купить
+                    tr.brand-table__body
+                        td
+                            img(src="img/brand-varta-1.jpg", alt="")
+                        td 12
+                        td 60
+                        td 650
+                        td 242х175х190
+                        td
+                            a.brand-table__submit.js-fancybox-link(href="#buyPopup").
+                                Купить
+          .brand__row.brand__row_middle
+            a.brand__item(href="#")
+              img.brand__img.brand__img_inci(src="img/r-img-brand-3.png", alt="")
+              span.brand__item-active-state
+            a.brand__item.brand__item_middle(href="#")
+              img.brand__img.brand__img_varta(src="img/r-img-brand-4.png", alt="")
+              span.brand__item-active-state
+            a.brand__item(href="#")
+              img.brand__img.brand__img_bosch(src="img/r-img-brand-2.png", alt="")
+              span.brand__item-active-state
+          .brand__row
+            a.brand__item.brand__item_offset(href="#")
+              img.brand__img.brand__img_deka(src="img/r-img-brand-1.png", alt="")
+              span.brand__item-active-state
+            a.brand__item.brand__item_offset(href="#")
+              img.brand__img.brand__img_inci(src="img/r-img-brand-3.png", alt="")
+              span.brand__item-active-state
+      #contacts.contacts
+        .title
+          span.title__i.title__i_white Контакты
+        ul.contacts-nav
+          li.contacts-nav__item
+            a.contacts-nav__link.contacts-nav__link_phone(href="tel:8-928-908-56-58") 8-928-908-56-58
+          li.contacts-nav__item
+            span.separator.separator_white
+          li.contacts-nav__item
+              a.contacts-nav__link.contacts-nav__link_email(href="mailto:akbcenter.amper@gmail.com") akbcenter.amper@gmail.com
+          li.contacts-nav__item
+            span.separator.separator_white
+          li.contacts-nav__item
+              a.contacts-nav__link.contacts-nav__link_skype(href="skype:amper.ru?call") amper.ru
+        address.contacts-address
+          .contacts-address__title г. Таганрог,
+          .contacts-address__text ул. Чехова, д. 332,
+          .contacts-address__text ул. Ломоносова, д. 69
+      .find
+        .title
+          span.title__i.title__i_red О нас
+        #about.about
+            p.about__text.
+                <b> Аккумуляторный центр «Ампер»</b> – сеть магазинов в г. Таганроге по продаже аккумуляторных батарей для автомобильного транспорта, спецтехники, мотоциклов, а также общего назначения: батареи для автономного энергообеспечения, бесперебойного питания, кассовых аппаратов, систем безопасности, электронного тестового оборудования.
+            p.about__text.
+                Наша цель – сделать покупку аккумулятора удобной и выгодной!
+                Для этого мы проводим гарантийное и послегарантийное обслуживание, а также даем бесплатную консультацию.
+
+        .find-container
+          .find-container__item.map
+            #map.map__i
+          .find-container__item
+            .fotorama(data-nav="thumbs", data-thumbwidth="71", data-thumbheight="47")
+              each i in [1, 2, 3, 4, 5, 6, 7, 8]
+                a(href="http://lorempixel.com/555/440")
+                  img(src="http://lorempixel.com/555/440")
+      #balloon.map-balloon(data-name="Ампер")
+        .map-balloon__i.
+          ул. Чехова, д. 21-2<br>
+          8-908-8888-888
+      #deliveryPopup.popup.popup_buy
+        header.popup__header Доставка
+        .popup__content
+          ol.popup-list
+            li.popup-list__item Доставка осуществляется в пределах г. Таганрога
+            li.popup-list__item Бесплатная доставка от 2500 руб.
+      #buyPopup.popup.popup_buy
+          header.popup__header Чтобы купить
+          .popup__content.popup__content_fix
+             .popup__block-40
+                 a(href="tel:8-928-908-56-58") Позвоните нам по телефону: 8-928-908-56-58
+             .popup__block-20
+                 span.
+                    или
+             .popup__block-40
+                  a(href="mailto:akbcenter.amper@gmail.com") Напишите нам на почту: akbcenter.amper@gmail.com

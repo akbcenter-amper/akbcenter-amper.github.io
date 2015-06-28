@@ -1,0 +1,22 @@
+.fancybox
+  &-overlay
+    background rgba(0, 0, 0, 0.3)
+  &-skin
+    border-radius 0
+    box-shadow 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21)
+  &-close
+    top 1.8rem
+    right 1.8rem
+    &:before
+      content '×'
+      font 5rem/0.5 Arial
+      cursor pointer
+      text-decoration none
+      color #e05145
+      position absolute
+      left 50%
+      top 50%
+      transition all 0.3s ease-out 0s
+      transform translate(-50%, -50%)
+    &:hover:before
+      color: #ccc

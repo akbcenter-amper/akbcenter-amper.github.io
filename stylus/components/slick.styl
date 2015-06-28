@@ -1,0 +1,28 @@
+.slick
+  &-prev,
+  &-next
+    position absolute
+    height 100%
+    top 0
+    bottom 0
+    width 30px
+    border 0
+    padding 0
+    background rgba(#df493d, 0.5)
+    font-size 0
+    transition background 300ms
+    &:hover
+      background rgba(#df493d, 0.7)
+    &:before
+      width 17px
+      height 50px
+      content ''
+      display inline-block
+  &-prev
+    left 0
+    &:before
+      background-image url(../img/slick-prev.png)
+  &-next
+    right 0
+    &:before
+      background-image url(../img/slick-next.png)

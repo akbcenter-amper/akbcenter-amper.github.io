@@ -1,0 +1,23 @@
+.footer
+  background #e56055
+  &__i
+    @extend $cf
+    @extend $container
+    padding 3.4rem 3rem
+  &__copyright
+    font 1.8rem latolight
+    color #fff
+    float left
+  &-nav
+    float right
+    &__item,
+    &__link
+      display inline-block
+      color #fff
+      font 1.8rem latolight
+    &__item
+      &+&
+        &:before
+          content '/'
+          margin 0 0.9rem
+          display inline-block
